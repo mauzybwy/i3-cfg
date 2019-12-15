@@ -10,12 +10,12 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 
-exec --no-startup-id "i3-msg 'workspace 1; workspace 1:emacs;';exec runemacs;"
-exec --no-startup-id "sleep 1; i3-msg 'workspace 2; workspace 2:web;';exec firefox;"
-exec --no-startup-id "sleep 3; i3-msg 'workspace 1:emacs;'"
-exec --no-startup-id "sleep 4; i3-msg 'workspace 3:git;'"
-exec --no-startup-id "sleep 5; exec gitkraken;"
-exec --no-startup-id "sleep 10; i3-msg 'workspace 1:emacs;'"
+# exec --no-startup-id "i3-msg 'workspace 1; workspace 1:emacs;';exec runemacs;"
+# exec --no-startup-id "sleep 1; i3-msg 'workspace 2; workspace 2:web;';exec firefox;"
+# exec --no-startup-id "sleep 3; i3-msg 'workspace 1:emacs;'"
+# exec --no-startup-id "sleep 4; i3-msg 'workspace 3:git;'"
+# exec --no-startup-id "sleep 5; exec gitkraken;"
+# exec --no-startup-id "sleep 10; i3-msg 'workspace 1:emacs;'"
 
 
 # exec_always ~/.config/i3/i3scripts/autoname_workspaces.py &
@@ -161,8 +161,8 @@ bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
 # move focused container to workspace
-bindsym $mod+Shift+$left move container to workspace prev
-bindsym $mod+Shift+$right move container to workspace next
+# bindsym $mod+Shift+$left move container to workspace prev
+# bindsym $mod+Shift+$right move container to workspace next
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
