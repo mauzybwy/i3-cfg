@@ -17,6 +17,9 @@
 # exec --no-startup-id "sleep 5; exec gitkraken;"
 # exec --no-startup-id "sleep 10; i3-msg 'workspace 1:emacs;'"
 
+exec --no-startup-id "xrandr --output HDMI-0 --auto --right-of eDP-1-1"
+exec_always --no-startup-id numlockx on
+exec-always nm-applet
 
 # exec_always ~/.config/i3/i3scripts/autoname_workspaces.py &
 exec_always xsetroot -solid "#33544a"
@@ -114,10 +117,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+# bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -126,7 +129,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # add support for re-naming workspace
-bindsym $mod+Control+n exec ~/.config/i3/i3scripts/rename_workspace.py &
+# bindsym $mod+Control+n exec ~/.config/i3/i3scripts/rename_workspace.py &
 
 # add support for re-naming container
 bindsym $mod+t exec ~/.config/i3/title_format.sh
@@ -145,8 +148,8 @@ bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
 
 # switch to workspace (relative)
-bindsym $mod+Control+$left workspace prev
-bindsym $mod+Control+$right workspace next
+# bindsym $mod+Control+$left workspace prev
+# bindsym $mod+Control+$right workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
